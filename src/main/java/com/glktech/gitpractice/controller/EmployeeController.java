@@ -10,6 +10,11 @@ public class EmployeeController {
 
       @GetMapping("/wishme")
       public String generateWishMsg(){
-        return "Hello Good Afternoon !";
+        return "Hello Good Afternoon ! ";
+      }
+
+      @GetMapping("/error")
+      public String error(){
+        return "errorMsg";
       }
 }
